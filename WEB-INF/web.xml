@@ -66,13 +66,26 @@
 
   <servlet-mapping>  
 <servlet-name>com.ncu.main.CheckServlet</servlet-name>  
-<url-pattern>/</url-pattern>  
+<url-pattern></url-pattern>  
+</servlet-mapping>  
+  <servlet-mapping>  
+<servlet-name>com.ncu.main.CheckServlet</servlet-name>  
+<url-pattern>/check</url-pattern>  
 
 </servlet-mapping>  
+
 <context-param>
         <param-name>log4j-config-location</param-name>
         <param-value>WEB-INF/configs/logger/logger.properties</param-value>
     </context-param>
+  <servlet>  
+<servlet-name>com.ncu.validators.AddVerify</servlet-name>  
+<servlet-class>com.ncu.validators.AddVerify</servlet-class>  
+</servlet>  
+  <servlet-mapping>  
+<servlet-name>com.ncu.validators.AddVerify</servlet-name>  
+<url-pattern>/averify</url-pattern>  
+</servlet-mapping>  
 
 </web-app>  
   

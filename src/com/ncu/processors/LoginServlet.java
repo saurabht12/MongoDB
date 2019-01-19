@@ -55,7 +55,7 @@ try
  out.print("<table width=80% border=1>");  
  out.println("<form action='add'><input type='submit' value='Add New'></form>");
  out.print("<caption><h3>User Data:</h3></caption>");
- out.println("<form action='verify'><input type='submit' value='Logout'></form>");
+ out.println("<form action='check'><input type='submit' value='Logout'></form>");
 
   out.println("<th>Name</th>");
   out.println("<th>Password</th>");
